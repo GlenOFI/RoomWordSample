@@ -2,12 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:clipToPadding="false">
 
+<!--    layout_margin determines the size of each item and gives equal spacing around text-->
     <TextView
         android:id="@+id/textView"
         style="@style/word_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light" />
+        android:layout_margin="@dimen/textview_margin"
+        />
 </LinearLayout>
